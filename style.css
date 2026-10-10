@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat-Bold.ttf");
+}
+.bg-img{
+    background-image: url(background.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.text-shadow{
+    text-shadow:2px 2px black;
+}
+.bg-darkened{
+    background-color: rgba(20, 10, 40, 0.75);
+    border-left:solid 1px rgb(246 1 157);
+    border-right:solid 1px rgb(246 1 157);
+    z-index: 0;
+}
+.bg-dark{
+    background-color:rgb(40, 10, 60) !important;
+}
+
+hr{
+    border-top:1px solid rgb(255, 228, 120);
+    background-color: rgb(255, 228, 120);
+    opacity: 1;
+}
+.card{
+    border-color: #4da6ff !important;
+    transition: 0.2s;
+}
+.card:hover{
+    background-color: rgb(60, 15, 90) !important;
+    border-color:rgb(255, 228, 120) !important;
+}
+.card:active{
+    background-color: rgb(20, 5, 30) !important;
+    border-color:rgb(246 1 157) !important;
+}
+
+#logo{
+    background: #000000;
+    background: linear-gradient(to bottom, #000000 30%, #3557C6 50%, #FFFFFF 60%, #000000 60%, #7F158F 70%, #bf8bc7 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "montserrat";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+#logo::before {
+  background: linear-gradient(
+    183deg,
+    white 0%,
+    #3557C6 70%,
+    #7F158F 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+}
+
+#logo::before {
+  content: attr(data-text);
+  position: absolute;
+  z-index: -1;
+}
